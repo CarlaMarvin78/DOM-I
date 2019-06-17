@@ -57,3 +57,30 @@ cta_button.textContent=siteContent["cta"]["button"]
 let cta_img_src=document.getElementById("cta-img");
 cta_img_src.setAttribute('src', siteContent["cta"]["img-src"]);
 
+let top_content_h4s = document.querySelectorAll(".top-content h4");
+let top_content_contents = document.querySelectorAll(".top-content p");
+top_content_h4s[0].textContent = siteContent["main-content"]["features-h4"];
+top_content_contents[0].textContent = siteContent["main-content"]["features-content"];
+top_content_h4s[1].textContent = siteContent["main-content"]["about-h4"];
+top_content_contents[1].textContent = siteContent["main-content"]["about-content"];
+
+let middle_img = document.getElementById("middle-img");
+middle_img.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let bottom_content_h4s = document.querySelectorAll(".bottom-content h4");
+let bottom_content_contents = document.querySelectorAll(".bottom-content p");
+bottom_content_h4s[0].textContent = siteContent["main-content"]["services-h4"];
+bottom_content_contents[0].textContent = siteContent["main-content"]["services-content"];
+bottom_content_h4s[1].textContent = siteContent["main-content"]["product-h4"];
+bottom_content_contents[1].textContent = siteContent["main-content"]["product-content"];
+bottom_content_h4s[2].textContent = siteContent["main-content"]["vision-h4"];
+bottom_content_contents[2].textContent = siteContent["main-content"]["vision-content"];
+
+let contact = document.querySelector(".contact").children;
+contact[0].textContent = siteContent["contact"]["contact-h4"];
+contact[1].textContent = siteContent["contact"]["address"];
+contact[2].textContent = siteContent["contact"]["phone"];
+contact[3].textContent = siteContent["contact"]["email"];
+
+let copyright = document.querySelector("footer p");
+copyright.textContent = siteContent["footer"]["copyright"];
