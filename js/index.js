@@ -49,3 +49,11 @@ nav_items[3].textContent=siteContent["nav"]["nav-item-4"];
 nav_items[4].textContent=siteContent["nav"]["nav-item-5"];
 nav_items[5].textContent=siteContent["nav"]["nav-item-6"];
 
+
+let cta_h1=document.querySelector(".cta h1");
+cta_h1.textContent=siteContent["cta"]["h1"];
+let cta_button=document.querySelector(".cta button");
+cta_button.textContent=siteContent["cta"]["button"]
+let cta_img_src=document.getElementById("cta-img");
+cta_img_src.setAttribute('src', siteContent["cta"]["img-src"]);
+
