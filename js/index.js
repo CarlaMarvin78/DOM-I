@@ -41,6 +41,9 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"]);
 
+
+// Task 1 & 2
+
 let nav_items= document.querySelector("nav").children;
 nav_items[0].textContent=siteContent["nav"]["nav-item-1"];
 nav_items[1].textContent=siteContent["nav"]["nav-item-2"];
@@ -84,3 +87,22 @@ contact[3].textContent = siteContent["contact"]["email"];
 
 let copyright = document.querySelector("footer p");
 copyright.textContent = siteContent["footer"]["copyright"];
+
+
+// Task 3
+
+let nav = document.querySelector("nav");
+nav.querySelectorAll("a").forEach(nav_a => nav_a.setAttribute('style', 'color:green'));
+
+
+let back = document.createElement('a');
+back.textContent = "Back";
+back.setAttribute('href', "#");
+nav.prepend(back);
+
+let beyond = document.createElement('a');
+beyond.textContent = "To infinity..";
+beyond.setAttribute('href', "#");
+nav.appendChild(beyond);
+
+
